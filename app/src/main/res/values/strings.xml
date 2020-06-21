@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SupermarktApp</string>
+    <string name="title_activity_product_finder">ProductFinder</string>
+</resources>
