@@ -8,6 +8,6 @@ public class RezeptdesTages extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_rezeptdes_tages);
+        setContentView(R.layout.activity_rezept_des_tages);
     }
 }

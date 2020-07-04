@@ -4,123 +4,239 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/ProduktFinder"
-        android:layout_width="331dp"
-        android:layout_height="57dp"
-        android:text="ProductFinder"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.425"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.91" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
 
-    <Button
-        android:id="@+id/einkaufslisten"
-        android:layout_width="134dp"
-        android:layout_height="54dp"
-        android:text="Meine EInkaufslisten"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.754" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
 
-    <Button
-        android:id="@+id/Angebote"
-        android:layout_width="130dp"
-        android:layout_height="50dp"
-        android:text="Angebote"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.836"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.756" />
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Hey User 12345"
+                android:textSize="30sp" />
 
-    <TextView
-        android:id="@+id/welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Herzlich willkommen User 12345"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.074" />
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:minWidth="50dp"
+                android:minHeight="50dp"
+                app:srcCompat="@drawable/avatar" />
 
-    <TextView
-        android:id="@+id/markt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Derzeitiger Markt:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.441"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202" />
+        </LinearLayout>
+        <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/markt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Derzeitiger Markt:" />
+
+            <TextView
+                android:id="@+id/markt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Redeka Musterstraße 1" />
+
+            <TextView
+                android:id="@+id/informationen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:text="Informationen" />
+
+            <TextView
+                android:id="@+id/textView21"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Auslastung" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wartezeit" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ungefähr 5 Minuten"
+                android:textColor="#FF9800" />
+
+        </LinearLayout>
+        -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingBottom="16dp">
+
+                <TextView
+                    android:id="@+id/markt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Derzeitiger Markt:"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/markt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Redeka Musterstraße 1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/informationen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:paddingBottom="8dp"
+                    android:text="Informationen"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Wartezeit" />
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="ungefähr 5 Minuten"
+                    android:textColor="#FF9800" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:text="Auslastung" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="20dp"
+                        android:maxHeight="20dp"
+                        app:srcCompat="@drawable/person_icon" />
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="20dp"
+                        android:maxHeight="20dp"
+                        app:srcCompat="@drawable/person_icon" />
+
+                    <ImageView
+                        android:id="@+id/imageView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="20dp"
+                        android:maxHeight="20dp"
+                        app:srcCompat="@drawable/person_icon" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
 
 
-    <TextView
-        android:id="@+id/markt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Redeka Musterstraße 1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.247" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/informationen"
-        android:layout_width="95dp"
-        android:layout_height="26dp"
-        android:layout_marginTop="216dp"
-        android:text="Informationen"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.484"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/auslastung"
-        android:layout_width="91dp"
-        android:layout_height="33dp"
-        android:layout_marginTop="276dp"
-        android:text="Auslastung"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.478"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/angebote"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Angebote" />
 
-    <TextView
-        android:id="@+id/wartezeit"
-        android:layout_width="87dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="336dp"
-        android:text="Wartezeit"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.472"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+                <Button
+                    android:id="@+id/rezepte"
+                    android:layout_width="130dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Rezeptwelt" />
 
-    <TextView
-        android:id="@+id/zeit"
-        android:layout_width="149dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="372dp"
-        android:text=" ungefähr 5 Minuten"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/einkaufslisten"
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:text="Meine EInkaufslisten" />
+
+            <Button
+                android:id="@+id/ProduktFinder"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                android:text="ProductFinder" />
+        </LinearLayout>
+
+    </LinearLayout>
 
 
 </android.support.constraint.ConstraintLayout>

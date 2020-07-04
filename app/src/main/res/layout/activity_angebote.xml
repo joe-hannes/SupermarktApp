@@ -8,73 +8,14 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="16dp">
+        android:padding="16dp"
+        android:gravity="bottom">
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/imageView4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:maxWidth="150dp"
-                    android:maxHeight="150dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/food3" />
-
-                <TextView
-                    android:id="@+id/textView9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Burger" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="vertical"
-                android:padding="16dp">
-
-                <ImageView
-                    android:id="@+id/imageView5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:maxWidth="150dp"
-                    android:maxHeight="150dp"
-                    android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/food4" />
-
-                <TextView
-                    android:id="@+id/textView10"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:text="Gnocchi in Tomatensauce" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:orientation="horizontal">
 
             <LinearLayout
@@ -93,14 +34,14 @@
                     android:maxWidth="150dp"
                     android:maxHeight="150dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/food1" />
+                    app:srcCompat="@drawable/produkt1" />
 
                 <TextView
                     android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text=" Pizza Margharita" />
+                    android:text="Ramen Nudeln Nur 0,99 €" />
             </LinearLayout>
 
             <LinearLayout
@@ -119,32 +60,79 @@
                     android:maxWidth="150dp"
                     android:maxHeight="150dp"
                     android:scaleType="fitCenter"
-                    app:srcCompat="@drawable/food2" />
+                    app:srcCompat="@drawable/produkt2" />
 
                 <TextView
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Kartoffelauflauf" />
+                    android:text="Mehl  1kg Nur 0,99€" />
             </LinearLayout>
         </LinearLayout>
 
-        <Space
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
-        </Space>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
 
-        <Button
-            android:id="@+id/bt_rezept_des_tages"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="Rezept des Tages" />
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/product3" />
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Naturjoghurt Nur 1,99 €" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:maxWidth="150dp"
+                    android:maxHeight="150dp"
+                    android:scaleType="fitCenter"
+                    app:srcCompat="@drawable/produkt4" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Zwiebeln 1 kg 2,99 €" />
+            </LinearLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
+
+
 
 
 </android.support.constraint.ConstraintLayout>
